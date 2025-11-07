@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>AI Quiz - Premium Edition</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body data-theme="dark">
+<div class="container">
+  <div class="header">
+    <div class="theme-toggle" id="themeToggle">
+      <div class="theme-toggle-slider">🌙</div>
+    </div>
+    <h1>AI Quiz</h1>
+    <p class="subtitle">Generate intelligent quizzes powered by AI</p>
+  </div>
+
+  <div class="card">
+    <div class="input-group">
+      <input id="topic" type="text" placeholder="Enter any topic..." />
+      <select id="count">
+        <option value="1">1 Q</option>
+        <option value="3" selected>3 Qs</option>
+        <option value="5">5 Qs</option>
+        <option value="10">10 Qs</option>
+      </select>
+      <button id="generateBtn">Generate Quiz</button>
+    </div>
+
+    <div class="progress-bar" id="progressBar" style="display:none;">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+
+    <div class="quiz-area" id="quizArea">
+      <div class="empty-state">
+        <div class="empty-icon"></div>
+        <p class="empty-text">Enter a topic and click Generate to start your quiz</p>
+      </div>
+    </div>
+
+    <button class="next-btn" id="nextBtn">Next Question →</button>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
